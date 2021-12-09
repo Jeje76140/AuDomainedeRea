@@ -1,0 +1,239 @@
+/* PARTIE HAUTE */
+
+
+
+
+.main-content-top {
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content-top img {
+        display: none;
+    }
+}
+
+
+
+/* PARTIE BASSE */
+
+.container-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    background: #1e1e1f;
+
+}
+
+.container-card .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container-card .box:hover {
+    transform: translateY(-20px);
+}
+
+.container-card .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fcd67b, #be3858);
+}
+
+.container-card .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fcd67b, #be3858);
+    filter: blur(30px);
+}
+
+.container-card .box:nth-child(2)::before,
+.container-card .box:nth-child(2)::after {
+    background: linear-gradient(315deg, #fcd67b, #be3858);
+}
+
+.container-card .box:nth-child(3)::before,
+.container-card .box:nth-child(3)::after {
+    background: linear-gradient(315deg, #fcd67b, #be3858);
+}
+
+.container-card .box span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container-card .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.container-card .box .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container-card .box .content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container-card .box .content p {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container-card .box .content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: black;
+    background: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.questions__title {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.img_pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+
+ul li:hover{
+    background-color: rgb(60,60,60, 0.6);
+    display: inline-block;
+}
+
+ul li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+ul li:hover::after{
+    transform: scale(1);
+}
+
+
+
+.mySlides {display: none;}
+#diapo {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
