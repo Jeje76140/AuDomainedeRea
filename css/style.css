@@ -26,4 +26,16 @@ nav ul li{
 }
 nav ul li a{
   color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent:
+}
+nav ul li a:hover{
+  color: cyan;
+  background: #050505;    
+  border-left-color: cyan;
 }
