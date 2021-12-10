@@ -1,5 +1,9 @@
 /* HEADER */
-
+.burger {
+    width : 42px;
+    height : 24px;
+    background-color: #0E0E0E;
+}
 .header {
     height: 720px;
     width: 100%;
