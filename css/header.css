@@ -1,6 +1,6 @@
 /* HEADER */
 .header {
-    height: 720px;
+    height: 100vh;
     width: 100%;
     background: rgb(250.128.114);
     position: relative;
@@ -162,20 +162,20 @@
 
     
     .header__navbar--menu {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         transform: translateX(-100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         position: absolute;
-        width: 15%;
-        height: 720px;
+        width: 20%;
+        height: 100vh;
         background: #0E0E0E;
-        top: 0;left: 0;
+        top:0;left: 0;
     }
     .header__navbar--menu-link {
-        margin: 20px 0;
+        margin: 30px 30px;
         font-size: 24px;
     }
 }
