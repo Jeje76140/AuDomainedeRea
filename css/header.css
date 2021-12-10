@@ -2,8 +2,19 @@
 .burger {
     width : 42px;
     height : 24px;
-    background-color: #0E0E0E;
+    cursor: pointer;
+    position: relative;
 }
+.burger span{
+    width: 100%;
+    height: 4px;
+    background-color: #0E0E0E;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .header {
     height: 720px;
     width: 100%;
