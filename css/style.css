@@ -32,7 +32,7 @@ nav ul li a{
   font-weight: 500;
   display: block;
   width: 100%;
-  border-left: 5px solid transparen;
+  border-left: 5px solid transparent;
 }
 nav ul li a:hover{
   color: cyan;
