@@ -71,8 +71,8 @@ nav ul li a{
 }
 nav ul li a:hover{
   color: white;
-  background: #050505;
-  border-left-color: cyan;
+  background: #262626;
+  border-left-color: #91D1D3;
 }
 
 .content{
