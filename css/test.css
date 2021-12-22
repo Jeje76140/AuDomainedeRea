@@ -154,3 +154,10 @@ nav ul li a:hover{
         
     }
 }
+div.logo {
+  text-align: center;
+}
+img{
+  width: 35%;
+  margin-top: 15px;
+}
