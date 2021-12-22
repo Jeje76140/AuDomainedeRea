@@ -2,21 +2,88 @@
 .header {
     height: 100vh;
     width: 100%;
-    background: rgb(250.128.114);
     position: relative;
+}
+.btn{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #1b1b1b;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.btn.click{
+  left: 265px;
+}
+.btn span{
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+.btn.click span:before{
+  content: '\f00d';
+}
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar .text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+nav ul{
+  background: #000;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-bottom: 1 px solid rgba(255,255,255,0.1);
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 20px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 10px solid transparent;
+}
+nav ul li a:hover{
+  color: white;
+  background: #262626;
+  border-left-color: #91D1D3;
 }
 
 .header__texture {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;left: 0;
+    top: 0px;
+    left: 0px;
     background: url(https://cdn.discordapp.com/attachments/557305648006823956/918777395178258432/fond.png) center no-repeat;
     background-size: cover;
-    z-index: 1;
-    opacity: 0.5;
+    z-index: -1;
+    opacity: 0.9;
 }
-
 .wave {
     position: absolute;
     bottom: 0;
@@ -25,6 +92,7 @@
     height: 100px;
     background: url(../img/wave.png);
     background-size: 1000px 100px;
+    z-index: -1;
 }
 
 .wave.wave1 {
@@ -84,131 +152,10 @@
         
     }
 }
-
-.header__navbar {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+div.logo {
+  text-align: center;
 }
-
-
-.header__navbar--menu-link {
-    margin-left: 40px;
-    color: white;
-    text-decoration: none;
-}
-
-.header__navbar--menu-link:hover {
-    color: #fff;
-}
-
-.header__slogan {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.h__slogan--title {
-    color: white;
-    font-size: 83px;
-    font-family: 'Lobster', cursive;
-    font-weight: bolder;
-    font-style: italic;
-    letter-spacing: 4px;
-}
-
-.h__slogan--btn {
-    font-size: 25px;
-    color: white;
-    border-bottom: 3px solid #f39c12;
-    display: inline;
-    z-index: 1000;
-}
-
-
-.header__navbar--toggle-icons:before {top: 10px;}
-.header__navbar--toggle-icons:after {top: -14px;}
-
-.is-open .header__navbar--menu {
-    transform: translateY(0);
-
-}
-
-    .container {
-        width: 100%;
-        padding: 0 20px;
-}
-
-    .header__navbar--toggle {
-        width: 40px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        z-index: 1000;
-        cursor: pointer;
-    }
-
-    .header__navbar--toggle-icons, .header__navbar--toggle-icons:before, .header__navbar--toggle-icons:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        border-radius: 5px;
-        background: white;
-        position: relative;
-    }
-
-    
-    .header__navbar--menu {
-        transition: all 0.5s ease-in-out;
-        transform: translateX(-100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        position: absolute;
-        width: 20%;
-        height: 100vh;
-        background: #0E0E0E;
-        top:0;left: 0;
-    }
-    .header__navbar--menu-link {
-        margin: 30px 30px;
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 972px) {
-    .h__slogan--title {
-        font-size: 48px;
-    }
-}
-
-#connect{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-#connect:hover{
-    background-color: rgb(60,60,60, 0.6);
-    display: inline-block;
-}
-
-#connect::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 0 auto;
-    background: white;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-
-#connect:hover::after{
-    transform: scale(1);
+img{
+  width: 75vh;
+  margin-top: 15px;
 }
