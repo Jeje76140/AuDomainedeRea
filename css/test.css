@@ -81,7 +81,7 @@ nav ul li a:hover{
     position: absolute;
     top: 0px;
     left: 0px;
-    background: url(https://cdn.discordapp.com/attachments/557305648006823956/918777395178258432/fond.png) center no-repeat;
+    background: url(https://cdn.discordapp.com/attachments/557305648006823956/923507725579739206/background.png) center no-repeat;
     background-size: cover;
     z-index: -1;
     opacity: 0.9;
@@ -158,7 +158,7 @@ div.logo {
   text-align: center;
 }
 img{
-  width: 75vh;
+  width: 500px;
   margin-top: 15px;
 }
 
