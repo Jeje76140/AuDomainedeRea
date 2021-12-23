@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Développé par Jérôme B -->
+<html lang="fr" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Au Domaine de Réa</title>
+      <link rel="stylesheet" href="css/test.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/557305648006823956/923132594239991888/Logo_Margaret.png">
+   </head>
+   <body>
+      <div class="header">
+            <div class="header__texture"></div>
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         
+            <ul>
+                <li><a href="accueil.html"><i class="fas fa-angle-right" aria-hidden="true"></i> Accueil</a></li>
+                <li><a href="elevage.html"><i class="fas fa-home" aria-hidden="true"></i> L'élevage</a></li>
+                <li><a href="chiots.html"><i class="fas fa-paw" aria-hidden="true"></i> Nos Chiots</a></li>
+                <li><a href="avis.html"><i class="fas fa-book" aria-hidden="true"></i> Livre d'Or</a></li>
+                <li><a href="contact.html"><i class="fas fa-address-card" aria-hidden="true"></i> Nous contacter</a></li>
+            </ul>
+      </nav>
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+    <div class="wave">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </div>
+   <div class="logo">
+      <img src="https://cdn.discordapp.com/attachments/557305648006823956/923132594239991888/Logo_Margaret.png">
+   </div>
+      </div>
+    <div class="main-content-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8">
+                        <table>
+                            <tbody><tr><td>
+                                <p style="float: right"></p><h1>Bienvenue au Domaine de Réa</h1>
+<br><br>Situé en Normandie, à 20 minutes de Dieppe et 1 heure de Rouen, ce petit élevage familial de bichon maltais et havanais sera le parfait endroit pour trouver votre futur compagnon de vie.
+<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.<p></p>
+                            </td>                            
+                        </tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+   <footer>
+      <div class="bottom">
+        <center>          
+          <span class="far fa-copyright"></span><span> 2021 AU DOMAINE DE RÉA - TOUS DROITS RÉSERVÉS</span>
+        </center>
+      </div>
+    </footer>
+</body>
+</html>
