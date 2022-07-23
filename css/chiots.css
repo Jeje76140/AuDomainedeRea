@@ -1,25 +1,11 @@
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a{
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover{
-  color: blue;
-  transition: .3s;
+nav {
+  background: none !important;
+  text-transform:uppercase;
+  li {
+    margin-left: 3em;
+    margin-right: 3em;
+    a{
+      transition: .5s color ease-in-out;
+    }
+  }
 }
